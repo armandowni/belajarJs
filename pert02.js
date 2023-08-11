@@ -20,30 +20,30 @@ const arrayUser = [
 // case 2: check umur user diatas 25 atau tidak
 // case 3: check panjang nomor
 
-const userBudi = arrayUser.find(user => user.name === "Budi");
+// const userBudi = arrayUser.find((user) => user.name === "Budi");
 
-if (userBudi) {
-  console.log("Nama:", userBudi.name);
-  console.log("Usia:", userBudi.age);
-  console.log("Nomor Telepon:", userBudi.phone);
-} else {
-  console.log("User Budi tidak ada.");
-}
+// if (userBudi) {
+//   console.log("Nama:", userBudi.name);
+//   console.log("Usia:", userBudi.age);
+//   console.log("Nomor Telepon:", userBudi.phone);
+// } else {
+//   console.log("User Budi tidak ada.");
+// }
 
-arrayUser.forEach(user => {
-  if (user.age > 25) {
-    console.log(`${user.name} berusia di atas 25 tahun.`);
-  } else if (user.age == 25){
-    console.log(`${user.name} berusia 25 tahun.`);
-  } else {
-    console.log(`${user.name} berusia kurang dari 25 tahun.`);
-  }
-});
+// arrayUser.forEach((user) => {
+//   if (user.age > 25) {
+//     console.log(`${user.name} berusia di atas 25 tahun.`);
+//   } else if (user.age == 25) {
+//     console.log(`${user.name} berusia 25 tahun.`);
+//   } else {
+//     console.log(`${user.name} berusia kurang dari 25 tahun.`);
+//   }
+// });
 
-arrayUser.forEach(user => {
-  const panjangPhone = user.phone.length;
-  console.log(`panjang nomor telpon ${user.name} =  ${panjangPhone} digit.`);
-});
+// arrayUser.forEach((user) => {
+//   const panjangPhone = user.phone.length;
+//   console.log(`panjang nomor telpon ${user.name} =  ${panjangPhone} digit.`);
+// });
 
 // let countHuruf = 0;
 
@@ -55,6 +55,16 @@ arrayUser.forEach(user => {
 
 // selection
 // if, else if, else, switch case
+const key = 0;
+const key2 = 10;
+// switch (1) {
+//   case key < key2:
+//     return console.log(1);
+//   case key < key2:
+//     return console.log(2);
+//   default:
+//     return console.log("default");
+// }
 
 // looping
 // for, while, do while
@@ -66,6 +76,17 @@ arrayUser.forEach(user => {
 //   }
 // }
 
+let count = 0;
+
+// do {
+//   console.log("jam ", count, "gua masak Mie");
+//   count += 1;
+// } while (count < 0);
+
+while (count < 0) {
+  console.log("jam ", count, "gua masak Mie");
+  count += 1;
+}
 // console.log('e: ',countHuruf);
 
 // cara 1 untuk mencari index apple
