@@ -1,5 +1,5 @@
 // tipe data
-const a = 1; //number
+const a = 2; //number
 const a2 = 2; //number
 const b = "Helle World"; //string => ['H','e','l', ...]
 const c = new Date(); //date
