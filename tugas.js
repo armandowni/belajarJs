@@ -18,3 +18,16 @@ const users = [
 ];
 
 // tulis codingan di bawah ini menggunakan data test diatas
+for (const user of users) {
+  const score = user.score;
+  switch (true) {
+    case score >= 75 && score <= 100:
+      console.log(`${user.name} Lulus`);
+      break;
+    case score >= 0 && score < 75:
+      console.log(`${user.name} Tidak Lulus`);
+      break;
+    default:
+      console.log("Nilai Tidak Valid");
+  }
+}
