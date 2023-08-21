@@ -25,14 +25,11 @@ const users = [
 2.Jika nilai siswa sama dengan atau lebih besar dari 75 maka siswa dinyatakan lulus.*/
 
 //inisialisasi variable
-
-let jumlahLulus = 0;
-let jumlahTidakLulus =0;
-
-const batasMinimum = 75;
-
-for(const users of users){
-  return users.score >= batasMinimum ?jumlahLulus++ :jumlahTidakLulus++;
-}
-console.log (`Jumlah murid yang lulus :${jumlahLulus}`);
-console.log (`Jumlah murid yang tidak lulus :${jumlahTidakLulus}`);
+// let jumlahLulus = 0;
+// let jumlahTidakLulus =0;
+// const batasMinimum = 75;
+// for(const users of users){
+//   return users.score >= batasMinimum ?jumlahLulus++ :jumlahTidakLulus++;
+// }
+// console.log (`Jumlah murid yang lulus :${jumlahLulus}`);
+// console.log (`Jumlah murid yang tidak lulus :${jumlahTidakLulus}`);
