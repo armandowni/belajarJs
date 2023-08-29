@@ -16,18 +16,23 @@ const users = [
   { name: "Ivan", score: 76 },
   { name: "Jack", score: 83 },
 ];
+/*Variabel const dengan sebuah array users yang berisi kan
+data-data name dan score*/
 
 // tulis codingan di bawah ini menggunakan data test diatas
 for (const user of users) {
-  const score = user.score;
-  switch (true) {
-    case score >= 75 && score <= 100:
-      console.log(`${user.name} Lulus`);
-      break;
-    case score >= 0 && score < 75:
-      console.log(`${user.name} Tidak Lulus`);
-      break;
-    default:
-      console.log("Nilai Tidak Valid");
+  //Menggunakan pengulangan for mengulang-ulang sebuah data dalam array users
+  const score = user.score; //Menghasilakan nilai score dari objek pengguna dan menyimpan dalam variabel score
+  switch (
+    true //lalu menggunakan pernyataan switch dengan ekspresi true untuk sebuah kasus berdasarkan kondisi nantinya
+  ) {
+    case score >= 75 && score <= 100: //Jika kasus score lebih atau sama dengan 75 hingga kurang dari atau sama dengan 100
+      console.log(`${user.name} Lulus`); //Maka Dinyatakan Lulus
+      break; //Pernyataan break berguna untuk menghentikan suatu kondisi apabila sudah menemukan kondisi yang cocok
+    case score >= 0 && score < 75: //Jika kasus score lebih atau sama dengan NOL dan hingga score kurang dari 75
+      console.log(`${user.name} Tidak Lulus`); //Maka Dinyatakan tidak lulus
+      break; //Pernyataan break untuk menghentikan evaluasi suatu kasus lebih lanjut setelah menemukan kondisi yang tepat
+    default: //Akan dijalankan apabila kondisi tidak benar
+      console.log("Nilai Tidak Valid"); //Maka menghasilkan output yang tidak valid
   }
 }

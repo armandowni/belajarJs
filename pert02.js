@@ -1,21 +1,21 @@
 // tipe data
-const a = 1; //number
-const a2 = 2; //number
-const b = "Helle World"; //string => ['H','e','l', ...]
-const c = new Date(); //date
-const d = ["apple", "banana", "grapes", "mango"]; //array
-const e = {
-  nama: "Fulan",
-  umur: 10,
-  favoriteFood: ["apple", "banana", "grapes", "mango"],
-  phone: "085891829839123",
-}; //object
+//const a = 1; //number
+//const a2 = 2; //number
+//const b = "Helle World"; //string => ['H','e','l', ...]
+//const c = new Date(); //date
+//const d = ["apple", "banana", "grapes", "mango"]; //array
+//const e = {
+//nama: "Fulan",
+//  umur: 10,
+//  favoriteFood: ["apple", "banana", "grapes", "mango"],
+// phone: "085891829839123",
+//}; //object
 
-const arrayUser = [
-  { name: "Fulan", age: 24, phone: "085891239128941324" },
-  { name: "Budi", age: 30, phone: "08589123123121" },
-  { name: "Joko", age: 21, phone: "0858912312321" },
-];
+//const arrayUser = [
+//  { name: "Fulan", age: 24, phone: "085891239128941324" },
+//  { name: "Budi", age: 30, phone: "08589123123121" },
+//  { name: "Joko", age: 21, phone: "0858912312321" },
+//];
 // case 1: cari user namanya Budi
 // case 2: check umur user diatas 25 atau tidak
 // case 3: check panjang nomor
@@ -55,8 +55,8 @@ const arrayUser = [
 
 // selection
 // if, else if, else, switch case
-const key = 0;
-const key2 = 10;
+//const key = 0;
+//const key2 = 10;
 // switch (1) {
 //   case key < key2:
 //     return console.log(1);
@@ -76,17 +76,17 @@ const key2 = 10;
 //   }
 // }
 
-let count = 0;
+//let count = 0;
 
 // do {
 //   console.log("jam ", count, "gua masak Mie");
 //   count += 1;
 // } while (count < 0);
 
-while (count < 0) {
-  console.log("jam ", count, "gua masak Mie");
-  count += 1;
-}
+//while (count < 0) {
+//  console.log("jam ", count, "gua masak Mie");
+//  count += 1;
+//}
 // console.log('e: ',countHuruf);
 
 // cara 1 untuk mencari index apple
@@ -107,11 +107,10 @@ while (count < 0) {
 // );
 
 // for in
-// for (const key in e) {
-//   if (key === "nama") console.log("if Key :", key, "have value ", e[key]);
-//   else if (key === "umur")
-//     console.log("else if Key :", key, "have value ", e[key]);
-//   else console.log("else Key :", key, "have value ", e[key]);
+for (const key in e) {
+  if (key === "nama") console.log("if Key :", key, "have value ", e[key]);
+  else if (key === "umur") console.log("else if Key :", key, "have value ", e[key]);
+  else console.log("else Key :", key, "have value ", e[key]);
 
-//   //   console.log("Key :", key, "have Value ", value);
-// }
+  console.log("Key :", key, "have Value ", value);
+}
