@@ -21,15 +21,15 @@ const users = [
 
 
 /* dik  
-1.batas minimum kelulusannya adalah 75.  
+1.batas minimum kelulusannyano adalah 75.  
 2.Jika nilai siswa sama dengan atau lebih besar dari 75 maka siswa dinyatakan lulus.*/
 
 //inisialisasi variable
 let jumlahLulus = 0;
 let jumlahTidakLulus =0;
 const batasMinimum = 75;
-for(const users of users){
-return users.score >= batasMinimum ?jumlahLulus++ :jumlahTidakLulus++;
+for(const user of users){
+ user.score >= batasMinimum ?jumlahLulus++ :jumlahTidakLulus++;
  }
 console.log (`Jumlah murid yang lulus :${jumlahLulus}`);
 console.log (`Jumlah murid yang tidak lulus :${jumlahTidakLulus}`);
