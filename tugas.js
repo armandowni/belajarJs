@@ -18,3 +18,18 @@ const users = [
 ];
 
 // tulis codingan di bawah ini menggunakan data test diatas
+
+let jumlahLulus = 0;
+let jumlahTidakLulus = 0;
+const batasMinimum = 75;
+for (const user of users) {
+  user.score >= batasMinimum ? jumlahLulus++ : jumlahTidakLulus++;
+}
+console.log(`Jumlah murid yang lulus :${jumlahLulus}`);
+console.log(`Jumlah murid yang tidak lulus :${jumlahTidakLulus}`);
+
+// for (const data of users) {
+//   if (data.score >= 75 && data.score <= 100) console.log("Lulus");
+//   else if (data.score >= 0 && data.score <= 75) console.log("Tidak lulus");
+//   else console.log("Nilai Tidak Valid");
+// }
