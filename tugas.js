@@ -28,8 +28,8 @@ for (const user of users) {
 console.log(`Jumlah murid yang lulus :${jumlahLulus}`);
 console.log(`Jumlah murid yang tidak lulus :${jumlahTidakLulus}`);
 
-// for (const data of users) {
-//   if (data.score >= 75 && data.score <= 100) console.log("Lulus");
-//   else if (data.score >= 0 && data.score <= 75) console.log("Tidak lulus");
-//   else console.log("Nilai Tidak Valid");
-// }
+ for (const data of users) {
+   if (data.score >= 75 && data.score <= 100) console.log("Lulus");
+   else if (data.score >= 0 && data.score <= 75) console.log("Tidak lulus");
+   else console.log("Nilai Tidak Valid");
+ }
