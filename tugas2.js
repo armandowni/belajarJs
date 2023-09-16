@@ -10,3 +10,9 @@ const data = [test1, test2, test3, test4, test5, test6, test7];
 
 
 //output dari data diatas adalah menyelesaikan aritmatika di dalam string di atas
+// for si const data,
+// pisah string berdasarkan spasi.
+// init a,b sama aritmatiknya.
+// switch case.
+// tampilin hasilnya.
+
