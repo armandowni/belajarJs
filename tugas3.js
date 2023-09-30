@@ -1,4 +1,4 @@
-// hitung dengan rumus phytagoras
+// hitung dengan rumus luas segitiga
 // jika hasilnya atau resultnya koma maka di bulatkan
 // contoh 15,2 menjadi 15, 15,5 menjadi 16, 15,7 menjadi 15
 // perhatikan datanya, jika null maka yang di cari yang null tersebut
