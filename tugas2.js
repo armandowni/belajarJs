@@ -10,14 +10,3 @@ const data = [test1, test2, test3, test4, test5, test6, test7];
 
 
 //output dari data diatas adalah menyelesaikan aritmatika di dalam string di atas
-
-
-for (const elements of data){
-    const a = elements.split(" ")
-    const b = parseInt (a[0]);
-    const c = parseInt (a[2]);
-   
-    console.log(a);
-     
-    
-}
