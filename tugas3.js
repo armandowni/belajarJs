@@ -15,15 +15,33 @@ const testData = [
   { alas: 8, tinggi: null, result: 56 },
   { alas: 10, tinggi: null, result: 25 },
   { alas: null, tinggi: 15, result: 90 },
-  { alas: null, tinggi: 7, result: 31.5 },
+  { alas: null, tinggi: 6, result: 31.5 },
   { alas: null, tinggi: 8, result: 44 },
 ];
 
 // tuliskan di sini algoritmanya
-// ...
+// rumus luar segitiga = alas x tinggi :2
 
 function calculateThePhytagoras(data) {
-  // tulis codenya disini
-}
+  for (const elements of data) {
+    // console.log(elements.alas);
+    console.log(elements);
 
+    if (elements.alas == null) {
+      const mencarialas = (2 * elements.result) / elements.tinggi;
+      elements.alas = Math.round(mencarialas);
+    } 
+    
+    else if (elements.tinggi == null) {
+      const mencaritinggi = (2 * elements.result) / elements.alas;
+      elements.tinggi = mencaritinggi;
+    } 
+    
+    else if (elements.result == null) {
+      const mencariluas = (elements.alas * elements.tinggi) / 2;
+      elements.result = mencariluas;
+    }
+  }
+  console.log(data);
+}
 calculateThePhytagoras(testData);
