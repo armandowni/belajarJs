@@ -1,4 +1,4 @@
-// soal berapa banyak pasangan penjumlahan dari sebuah array yang hasil nya dari sebuah angka
+// // soal berapa banyak pasangan penjumlahan dari sebuah array yang hasil nya dari sebuah angka
 
 const testData = [
   { arrayNumber: [2, 1, 8, 9], result: 10 },
@@ -26,7 +26,27 @@ const testData = [
 // ...
 
 function calculateTheCombination(dataUser) {
-  // tulis disini codenya
+  const combinations = [];
+  for (const elements of dataUser) {
+    let count = 0;
+    const a = elements.arrayNumber;
+    const b = elements.result;
+    for (let i = 0; i < a.length; i++) {
+      for (let j = i + 1; j < a.length; j++) {
+        const sum = a[i] + a[j];
+        if (sum === b) {
+          combinations.push({
+            combination: [a[i], a[j]],
+            sum,
+          });
+          count++;
+        }
+      }
+    }
+    console.log(`Total Combination : ${count}, result : ${b}`)
+  }
+  return  combinations;
 }
 
 calculateTheCombination(testData);
+

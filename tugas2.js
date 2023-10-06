@@ -8,5 +8,12 @@ const test7 = "100 / 20";
 
 const data = [test1, test2, test3, test4, test5, test6, test7];
 
+for(const elements of data){
+    const a = elements.split("");
+    const b = a[0];
+    const c = a[2];
+   console.log(b,c);
+}
+
 
 //output dari data diatas adalah menyelesaikan aritmatika di dalam string di atas
