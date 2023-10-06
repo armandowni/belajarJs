@@ -8,8 +8,6 @@ const test7 = "100 / 20";
 
 const data = [test1, test2, test3, test4, test5, test6, test7];
 
-
-<<<<<<< HEAD
 //output dari data diatas adalah menyelesaikan aritmatika di dalam string di atas
 
 for (const datatest of data) {
@@ -44,6 +42,5 @@ console.log(hasil);
 
 //const myArray = test1.split(" ");
 //console.log(test1);
-=======
+
 //output dari data diatas adalah menyelesaikan aritmatika di dalam string di atas
->>>>>>> cad1d887413260c40373c75f94ed848ad465fd5e

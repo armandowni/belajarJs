@@ -20,9 +20,6 @@ const users = [
 ];
 
 // tulis codingan di bawah ini menggunakan data test diatas
-<<<<<<< HEAD
-
-<<<<<<< HEAD
 let Lulus = 0;
 let TLulus = 0;
 
@@ -36,7 +33,7 @@ for (const user of users) {
 
 console.log(`Jumlah murid yang lulus: ${Lulus}`);
 console.log(`Jumlah murid yang tidak lulus: ${TLulus}`);
-=======
+
 let jumlahLulus = 0;
 let jumlahTidakLulus = 0;
 const batasMinimum = 75;
@@ -51,6 +48,3 @@ console.log(`Jumlah murid yang tidak lulus :${jumlahTidakLulus}`);
 //   else if (data.score >= 0 && data.score <= 75) console.log("Tidak lulus");
 //   else console.log("Nilai Tidak Valid");
 // }
->>>>>>> 3c914af8e2255687c580123266c064d0c7403f72
-=======
->>>>>>> cad1d887413260c40373c75f94ed848ad465fd5e
