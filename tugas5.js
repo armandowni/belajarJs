@@ -31,33 +31,27 @@ const arrayUser = [
 
 function convertPhoneUser(dataUser) {
   // tulis disini codenya
-  let klasifikasiUmur="";
-const updateDataUser = dataUser.map(user=>{
-if (user.phoneNumber) {
-  user.phoneNumber =user.phoneNumber.replace(`+62`,`0`);
-  if (user.age <=10) {
-    klasifikasiUmur ="Anak Kecil";
-  }
-  else if(user.age <=16){
-  klasifikasiUmur="Remaja";
-  }
-  else if(user.age <=22){
-  klasifikasiUmur="Remaja Dewasa";
-  }
-  else if(user.age <=29){
-  klasifikasiUmur="Dewasa Muda";
-  }
-  else if(user.age <=40){
-  klasifikasiUmur="Dewasa Tua";
-  }
-  else{
-    klasifikasiUmur = "Orang Tua"
-  }
- user[`Klasifikasi`]=klasifikasiUmur;
-
-}
-return user;
-});
-return updateDataUser;
+  let klasifikasiUmur = "";
+  const updateDataUser = dataUser.map((user) => {
+    if (user.phoneNumber) {
+      user.phoneNumber = user.phoneNumber.replace(`+62`, `0`);
+      if (user.age <= 10) {
+        klasifikasiUmur = "Anak Kecil";
+      } else if (user.age <= 16) {
+        klasifikasiUmur = "Remaja";
+      } else if (user.age <= 22) {
+        klasifikasiUmur = "Remaja Dewasa";
+      } else if (user.age <= 29) {
+        klasifikasiUmur = "Dewasa Muda";
+      } else if (user.age <= 40) {
+        klasifikasiUmur = "Dewasa Tua";
+      } else {
+        klasifikasiUmur = "Orang Tua";
+      }
+      user[`Klasifikasi`] = klasifikasiUmur;
+    }
+    return user;
+  });
+  return updateDataUser;
 }
 console.log(convertPhoneUser(arrayUser));
